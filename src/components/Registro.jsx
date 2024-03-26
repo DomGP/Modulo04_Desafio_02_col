@@ -1,4 +1,4 @@
-import Alert from "./Alert"
+import Alerta from "./Alerta"
 import Formulario from "./Formulario"
 import SocialButton from "./SocialButton"
 import Header from "./Header"
@@ -23,7 +23,10 @@ const Registro = () => {
                 subtitleText = 'o usa tu email para registrarte'
             />
             <Formulario />
-            <Alert />
+            <Alerta 
+                colorAlert = 'success'
+                textAlert = 'probando'
+                />
         </div>
         
         </>
