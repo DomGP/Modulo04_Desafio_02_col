@@ -1,9 +1,15 @@
-const SocialButton = ({icon}) => {
-    return (
-        <>
-            <img className="icons" src={icon} alt="" />
-        </>
-    )
-}
+import PropTypes from "prop-types";
 
-export default SocialButton
+const SocialButton = ({ icon }) => {
+  return (
+    <>
+      <img className='icons' src={icon} alt='' />
+    </>
+  );
+};
+
+SocialButton.propTypes = {
+  icon: PropTypes.string.isRequired,
+};
+
+export default SocialButton;

@@ -1,11 +1,16 @@
-import Alert from 'react-bootstrap/Alert';
+import PropTypes from "prop-types";
 
-const Alerta = ({colorAlert, textAlert}) => {
-    return (
-        <>
-            <Alert variant={colorAlert}>{textAlert}</Alert>
-        </>
-    )
-}
+const Alerta = ({ message, color }) => {
+  return (
+    <div className={`alert alert-${color}`} role='alert'>
+      {message}
+    </div>
+  );
+};
 
-export default Alerta
+Alerta.propTypes = {
+  message: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired,
+};
+
+export default Alerta;
