@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Alerta from "./Alerta";
@@ -47,12 +47,41 @@ const Formulario = () => {
       return;
     }
 
+    const contraseñaValida = verificarContraseña(password);
+    if (!contraseñaValida) {
+      setShow(true);
+      setAlert({
+        message:
+          "La contraseña debe tener al menos 8 caracteres, un carácter especial, una letra mayúscula, una letra minúscula y un número.",
+        color: "danger",
+      });
+      return;
+    }
+
     setNombre("");
     setEmail("");
     setPassword("");
     setConfirmPassword("");
     setShow(true);
     setAlert({ message: "Formulario enviado", color: "success" });
+  };
+
+  const verificarContraseña = (contraseña) => {
+    const longitudMinima = 8;
+    const tieneCaracterEspecial = /[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]+/.test(
+      contraseña
+    );
+    const tieneMayuscula = /[A-Z]/.test(contraseña);
+    const tieneMinuscula = /[a-z]/.test(contraseña);
+    const tieneNumero = /[0-9]/.test(contraseña);
+
+    return (
+      contraseña.length >= longitudMinima &&
+      tieneCaracterEspecial &&
+      tieneMayuscula &&
+      tieneMinuscula &&
+      tieneNumero
+    );
   };
 
   return (
