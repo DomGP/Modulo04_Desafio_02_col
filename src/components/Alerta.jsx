@@ -8,9 +8,9 @@ const Alerta = ({ message, color }) => {
   );
 };
 
-Alerta.propTypes = {
+/* Alerta.propTypes = {
   message: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
-};
+}; */
 
 export default Alerta;

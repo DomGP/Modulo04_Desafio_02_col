@@ -5,6 +5,14 @@ body {
   min-width: 320px;
   min-height: 100vh;
   font-family:sans-serif;
+  background-image: linear-gradient(
+    to right,
+    #afffab,
+    #b9ffa4,
+    #c4ff9e,
+    #ceff98,
+    #d9fe92
+  );
 }
 .cardStyle{
   display: flex;
@@ -13,8 +21,11 @@ body {
   border: 2px solid black;
   padding:0.5em 2em 2em 2em;
   border-radius: 20px;
-
-}
+  height: 37em;
+  width: 24em;
+  border: none;
+  background-color: white;
+  }
 
 .iconStyle{
   display: flex;
@@ -34,4 +45,23 @@ body {
   /* margin-top: 2em !important; */
   padding: 0.5em 4.2em 0.5em 4.2em;
   margin-bottom: 1em;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 100vh;
+}
+
+.header {
+  font-size: 2.5em;
+  padding-top: 0.5em;
+  /* width: 100%; */
+}
+
+.texto {
+  font-size: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }

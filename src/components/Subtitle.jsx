@@ -8,8 +8,8 @@ const Subtitle = ({ subtitleText }) => {
   );
 };
 
-Subtitle.propTypes = {
+/* Subtitle.propTypes = {
   subtitleText: PropTypes.string.isRequired,
 };
-
+ */
 export default Subtitle;
