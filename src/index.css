@@ -5,6 +5,14 @@ body {
   min-width: 320px;
   min-height: 100vh;
   font-family: sans-serif;
+  background-image: linear-gradient(
+    to right,
+    #afffab,
+    #b9ffa4,
+    #c4ff9e,
+    #ceff98,
+    #d9fe92
+  );
 }
 
 .cardStyle {
