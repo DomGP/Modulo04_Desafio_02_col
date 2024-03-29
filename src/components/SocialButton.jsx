@@ -1,9 +1,18 @@
-const SocialButton = ({icon}) => {
-    return (
-        <>
-            <img className="icons" src={icon} alt="" />
-        </>
-    )
-}
+import PropTypes from "prop-types";
+import { Button } from "react-bootstrap";
 
-export default SocialButton
+const SocialButton = ({ button }) => {
+  return (
+    <>
+      <Button variant='outline-dark rounded-circle p-3 m-1'>
+        <i className={`fa-brands ${button} fa-xl`}></i>
+      </Button>
+    </>
+  );
+};
+
+SocialButton.propTypes = {
+  button: PropTypes.string.isRequired,
+};
+
+export default SocialButton;
