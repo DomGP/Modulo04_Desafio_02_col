@@ -66,7 +66,6 @@ const Formulario = () => {
     setAlert({ message: "Formulario enviado", color: "success" });
   };
 
-  // Función para verificar la contraseña
   const verificarContraseña = (contraseña) => {
     const longitudMinima = 8;
     const tieneCaracterEspecial = /[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]+/.test(
