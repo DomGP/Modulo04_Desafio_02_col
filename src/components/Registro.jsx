@@ -6,16 +6,16 @@ import Subtitle from "./Subtitle";
 const Registro = () => {
   return (
     <>
-      <div className='cardStyle'>
+      <div className='cardStyle border-0'>
         <Header textTitle='Crea una cuenta' />
         <div className='iconStyle'>
-          <SocialButton icon='src/assets/imgs/iconFacebook.png' />
-          <SocialButton icon='src/assets/imgs/iconGitHub.png' />
-          <SocialButton icon='src/assets/imgs/iconLinkedIn.png' />
+          <SocialButton button={"fa-facebook"} />
+          <SocialButton button={"fa-github"} />
+          <SocialButton button={"fa-linkedin"} />
         </div>
         <Subtitle subtitleText='o usa tu email para registrarte' />
         <Formulario />
-             </div>
+      </div>
     </>
   );
 };

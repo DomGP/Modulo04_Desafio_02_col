@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 const Alerta = ({ message, color }) => {
   return (
-    <div className={`alert alert-${color}`} role='alert'>
+    <div className={`alert alert-${color}`} role='alert' id="alerta">
       {message}
     </div>
   );

@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 const Subtitle = ({ subtitleText }) => {
   return (
     <>
-      <h6>{subtitleText}</h6>
+      <h6 className='texto'>{subtitleText}</h6>
     </>
   );
 };

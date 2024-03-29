@@ -22,7 +22,7 @@ const Formulario = () => {
     ) {
       setShow(true);
       setAlert({
-        message: "Debes llenar todos los campos requeridos",
+        message: "Completa todos los campos !",
         color: "danger",
       });
       return;
@@ -57,7 +57,7 @@ const Formulario = () => {
 
   return (
     <>
-      <Form onSubmit={submit}>
+      <Form onSubmit={submit} className='formulario'>
         <Form.Group className='mb-3' controlId='formBasicEmail'>
           <Form.Control
             type='text'
@@ -99,8 +99,8 @@ const Formulario = () => {
         <Button className='buttonStyle' variant='success' type='submit'>
           Registrarse
         </Button>
+        {show && <Alerta message={alert.message} color={alert.color} />}
       </Form>
-      {show && <Alerta message={alert.message} color={alert.color} />}
     </>
   );
 };

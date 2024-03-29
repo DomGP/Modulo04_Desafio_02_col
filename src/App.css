@@ -1,8 +1,21 @@
+body {
+  background-image: url("../src/assets/imgs/fondo.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   text-align: center;
+  font-family: "Roboto";
 }
 
 .logo {
@@ -37,6 +50,36 @@
   padding: 2em;
 }
 
+.cardStyle {
+  height: 40em;
+  width: 24em;
+  border: none;
+  background-color: white;
+}
+
 .read-the-docs {
   color: #888;
+}
+
+#alerta {
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 100vh;
+}
+
+.header {
+  font-size: 2.5em;
+  padding-top: 1em;
+  width: 100%;
+}
+
+.texto {
+  font-size: 1em;
+  padding-bottom: 1em;
 }
